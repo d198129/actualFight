@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/she/she",
+    "pages/find/find",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff6699",
+    "navigationBarTitleText": "悄悄话",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#1afa29",
+    "position": "bottom",
+    "borderStyle": "white",
+    "backgroundColor": "#F6F6F6",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "悄悄话",
+        "iconPath": "images/tab/index1.png",
+        "selectedIconPath": "images/tab/index2.png"
+      },
+      {
+        "pagePath": "pages/she/she",
+        "text": "密友",
+        "iconPath": "images/tab/she1.png",
+        "selectedIconPath": "images/tab/she2.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "甜甜圈",
+        "iconPath": "images/tab/find1.png",
+        "selectedIconPath": "images/tab/find2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/tab/me1.png",
+        "selectedIconPath": "images/tab/me2.png"
+      }
+    ]
+  },
+  
+    
+  "sitemapLocation": "sitemap.json"
+}
