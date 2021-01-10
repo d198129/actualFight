@@ -1,0 +1,5 @@
+<!--components/login/login.wxml-->
+<view class="user_btn">
+  <image class="image" src="/images/tab/bg.png" />
+  <navigator class="navigator" url="/pages/login/login"><image class="image1" mode="widthFix" src="/images/tab/unlg.png"/>去登录</navigator>
+</view>
