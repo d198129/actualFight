@@ -1,2 +1,7 @@
 <!--pages/find/find.wxml-->
-<text>pages/find/find.wxml</text>
+<view class="user_wrap" wx:if="{{userinfo.avatarUrl}}">
+  123
+</view>
+<block wx:else>
+  <unLogin></unLogin>
+</block>

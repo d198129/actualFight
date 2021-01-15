@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "unLogin": "../../components/login/login"
+  },
+  "navigationBarTitleText":"联系人"
 }
