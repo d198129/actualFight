@@ -1,23 +1,49 @@
-// pages/me/me.js
+// miniprogram/pages/userdetail/userdetail.js
+import Dialog from '../../miniprogram_npm/@vant/weapp/dialog/dialog';
+import Toast from '../../miniprogram_npm/@vant/weapp/toast/toast';
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userinfo: {}
+    userinfo:{}
   },
-
+  
+  detaila() {
+    wx.previewImage({
+      current: this.data.userinfo.avatarUrl,
+      urls: [this.data.userinfo.avatarUrl]
+    })
+  },
+  edit(){
+    Dialog.confirm({
+      title: '操作',
+      message: '确认退出吗',
+    })
+      .then(async () => {
+        // on confirm
+        try {
+          await wx.clearStorageSync();
+          wx.navigateBack({
+            delta: 1
+          });
+        } catch(e) {
+          console.log(e);
+        }
+      })
+      .catch(() => {
+        // on cancel
+        Toast.fail({message:'取消操作',forbidClick: true,})
+      });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
   },
-  
-  user_detail() {
-    wx.navigateTo({url: '/pages/userdetail/userdetail'});
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

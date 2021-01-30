@@ -1,7 +1,11 @@
 <!--pages/me/me.wxml-->
 <view class="userinfo_wrapper">
   <view class="user_wrap" wx:if="{{userinfo.avatarUrl}}">
-    123
+     <view class="head">
+      <view class="avatar"><image mode="widthFix" src="{{userinfo.avatarUrl}}" /></view>
+      <view class="nickname">{{userinfo.nickName}}</view>
+      <van-icon name="arrow" class="next" bindtap="user_detail" />
+     </view>
   </view>
   <block wx:else>
     <unLogin></unLogin>

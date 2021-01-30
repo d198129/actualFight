@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "unLogin": "../../components/login/login"
+    "unLogin": "../../components/login/login",
+    "van-icon": "@vant/weapp/icon/index"
   },
   "navigationBarTitleText":"我的"
 }

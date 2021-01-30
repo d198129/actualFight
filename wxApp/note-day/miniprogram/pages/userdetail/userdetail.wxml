@@ -1,0 +1,20 @@
+<!--miniprogram/pages/userdetail/userdetail.wxml-->
+<view class="userinfo_detail">
+  <view class="detail">
+    <text>头像</text><image src="{{userinfo.avatarUrl}}" bindtap="detaila" />
+  </view>
+  <view class="detail">
+    <text>昵称</text><text>{{userinfo.nickName}}</text>
+  </view>
+  <view class="detail">
+    <text>性别</text><text>{{!userinfo.gender ? '女' : '男'}}</text>
+  </view>
+  <view class="detail">
+    <text>地区</text><text>{{userinfo.province}} {{userinfo.city}}</text>
+  </view>
+  <view class="edit" bindtap="edit">
+    <text>退出登录</text>
+  </view>
+  <van-dialog id="van-dialog" />
+  <van-toast id="van-toast" />
+</view>
