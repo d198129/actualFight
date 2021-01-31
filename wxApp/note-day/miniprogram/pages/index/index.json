@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "unLogin": "../../components/login/login"
+    "unLogin": "../../components/login/login",
+    "nav-bar": "../../components/nav-bar/nav-bar"
   }
 }

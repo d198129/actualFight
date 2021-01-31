@@ -12,7 +12,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#87ceeb",
     "navigationBarTitleText": "悄悄话",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "color": "#000",

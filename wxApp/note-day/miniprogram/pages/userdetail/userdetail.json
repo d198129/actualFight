@@ -1,7 +1,7 @@
 {
   "usingComponents": {
     "van-dialog": "@vant/weapp/dialog/index",
+    "nav-bar": "../../components/nav-bar/nav-bar",
     "van-toast": "@vant/weapp/toast/index"
-  },
-  "navigationBarTitleText":"个人信息"
+  }
 }

@@ -1,4 +1,5 @@
 <!--pages/me/me.wxml-->
+<nav-bar title="我的" statusBarColor="#87ceeb" navBarColor="#87ceeb" titleColor="#fff"></nav-bar>
 <view class="userinfo_wrapper">
   <view class="user_wrap" wx:if="{{userinfo.avatarUrl}}">
      <view class="head">

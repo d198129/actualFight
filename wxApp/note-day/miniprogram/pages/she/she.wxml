@@ -1,4 +1,5 @@
 <!--pages/she/she.wxml-->
+<nav-bar title="密友" statusBarColor="#87ceeb" navBarColor="#87ceeb" titleColor="#fff"></nav-bar>
 <view class="user_wrap" wx:if="{{userinfo.avatarUrl}}">
     123
 </view>
