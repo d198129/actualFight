@@ -1,0 +1,7 @@
+<!--miniprogram/pages/day/day.wxml-->
+<nav-bar title="纪念日" statusBarColor="#87ceeb" navBarColor="#87ceeb" titleColor="#fff" isture="true"></nav-bar>
+<view class="userinfo_detail">
+  <view class="detail" wx:for="{{days}}" wx:key="item._id">
+    <text>{{item.day}}</text><text>{{item.name}}</text>
+  </view>
+</view>

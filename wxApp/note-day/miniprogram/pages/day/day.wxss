@@ -1,0 +1,13 @@
+/* miniprogram/pages/day/day.wxss */
+.userinfo_detail .detail {
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx 40rpx;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2rpx 2rpx 10rpx #87ceeb;
+}
+.userinfo_detail .detail text {
+  font-size: 20px;
+}

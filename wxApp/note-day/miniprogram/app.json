@@ -5,7 +5,9 @@
     "pages/find/find",
     "pages/me/me",
     "pages/login/login",
-    "pages/userdetail/userdetail"
+    "pages/userdetail/userdetail",
+    "pages/feedback/feedback",
+    "pages/day/day"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
