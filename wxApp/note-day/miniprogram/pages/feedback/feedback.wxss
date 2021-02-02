@@ -1,0 +1,5 @@
+/* miniprogram/pages/feedback/feedback.wxss */
+.kefu {
+  font-size: 48rpx;
+  text-align: center;
+}
