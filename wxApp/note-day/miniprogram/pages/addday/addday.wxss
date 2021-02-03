@@ -1,0 +1,15 @@
+/* miniprogram/pages/addday/addday.wxss */
+.input {
+  margin-bottom: 20rpx;
+}
+.commit {
+  width: 60%;
+  height: 120rpx;
+  margin: 0 auto;
+  border-radius: 50rpx;
+  border: 1px solid #87ceeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48rpx;
+}

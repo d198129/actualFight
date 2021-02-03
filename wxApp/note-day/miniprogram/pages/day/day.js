@@ -9,11 +9,16 @@ Page({
     days: []
   },
 
+  addday(){
+    wx.navigateTo({url: '/pages/addday/addday',
+      fail: (e)=>{console.log(e);},
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    db.collection('day').get().then(res => {
+    db.collection('day').orderBy('mouth','asc').orderBy('day','asc').get().then(res => {
       console.log(res);
       let days = res.data;
       this.setData({
@@ -66,8 +71,15 @@ Page({
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
-
+  onPullDownRefresh: async function () {
+    await db.collection('day').orderBy('mouth','asc').orderBy('day','asc').get().then(res => {
+      console.log(res);
+      let days = res.data;
+      this.setData({
+        days
+      })
+    })
+    wx.stopPullDownRefresh();
   },
 
   /**

@@ -1,0 +1,45 @@
+<!--miniprogram/pages/addday/addday.wxml-->
+<nav-bar title="添加纪念日" statusBarColor="#87ceeb" navBarColor="#87ceeb" titleColor="#fff" isture="true"></nav-bar>
+<van-cell-group>
+  <view class="input">
+    <van-field
+      class="input"
+      value="{{ name }}"
+      label="节日名"
+      icon="question-o"
+      placeholder="请输入节日名"
+      clearable
+      maxlength='10'
+      bind:click-icon="onClickIcon"
+      bind:blur="change1"
+    />
+  </view>
+  <view class="input">
+    <van-field
+      class="input"
+      value="{{ mouth }}"
+      type="number"
+      label="月份"
+      placeholder="请输入月份"
+      border="{{ false }}"
+      bind:blur="change2"
+    />
+  </view>
+
+  <view class="input">
+    <van-field
+      class="input"
+      value="{{ day }}"
+      type="number"
+      label="日"
+      placeholder="请输入几日"
+      border="{{ false }}"
+      bind:blur="change3"
+    />
+  </view>
+</van-cell-group>
+<van-toast id="van-toast" />
+<view class="commit" bindtap="commit">
+  确认添加
+</view>
+<van-dialog id="van-dialog" />
