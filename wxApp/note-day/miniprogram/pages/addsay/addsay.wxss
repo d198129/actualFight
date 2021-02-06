@@ -1,0 +1,4 @@
+/* miniprogram/pages/addsay/addsay.wxss */
+.van-field__label, .van-button__text {
+  font-size: 32rpx;
+}

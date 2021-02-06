@@ -1,0 +1,20 @@
+<!--miniprogram/pages/addsay/addsay.wxml-->
+<nav-bar title="每日一语" statusBarColor="#87ceeb" navBarColor="#87ceeb" titleColor="#fff" isture="true"></nav-bar>
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    type="textarea"
+    bind:blur="onChange"
+    center
+    autosize
+    clearable
+    label="每日一语"
+    placeholder="请输入想说的话"
+    border="{{ false }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary" bindtap="addsay">发表</van-button>
+  </van-field>
+</van-cell-group>
+<van-dialog id="van-dialog" />
+<van-toast id="van-toast" />
