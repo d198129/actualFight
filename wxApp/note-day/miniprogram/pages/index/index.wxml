@@ -1,15 +1,17 @@
 <!--miniprogram/pages/index/index.wxml-->
-<nav-bar title="悄悄话" statusBarColor="#87ceeb" navBarColor="#87ceeb" titleColor="#fff"></nav-bar>
+<nav-bar title="每日一语" statusBarColor="#87ceeb" navBarColor="#87ceeb" titleColor="#fff"></nav-bar>
 <view class="user_wrap" wx:if="{{userinfo.avatarUrl}}">
-  123
+  <van-swipe-cell right-width="{{ 65 }}" id="swipe-cell" wx:for="{{daysay}}" wx:key="item._id" name="{{item._id}}" async-close bind:close="onClose">
+    <van-cell-group>
+      <van-cell title="{{item.title}}" value="{{item.say}}" />
+    </van-cell-group>
+    <view slot="right" style="height: {{height}}px;line-height: {{height}}px;">删除</view>
+  </van-swipe-cell>
 </view>
 <block wx:else>
   <unLogin></unLogin>
 </block>
-<van-swipe-cell right-width="{{ 65 }}" left-width="{{ 65 }}">
-    <view slot="left">选择</view>
-    <van-cell-group>
-      <van-cell title="单元格" value="内容" />
-    </van-cell-group>
-    <view slot="right">删除</view>
-  </van-swipe-cell>
+<van-dialog id="van-dialog" />
+<view class="add" bindtap="add">
+  +
+</view>

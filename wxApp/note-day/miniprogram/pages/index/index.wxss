@@ -1,1 +1,36 @@
 /* miniprogram/pages/index/index.wxss */
+.van-cell {
+  flex-direction: column;
+}
+.van-cell__title {
+  text-align: left;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+}
+.van-cell__value {
+  text-indent: 2em;
+  text-align-last: left;
+  font-size: 40rpx;
+}
+.van-swipe-cell__right {
+  display: inline-block;
+  width: 65px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+}
+.add {
+  position: fixed;
+  bottom: 50rpx;
+  right: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background-color: #87ceeb;
+  font-size: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #969799;
+}

@@ -1,7 +1,10 @@
 {
   "usingComponents": {
+    "van-dialog": "@vant/weapp/dialog/index",
     "unLogin": "../../components/login/login",
     "nav-bar": "../../components/nav-bar/nav-bar",
-    "van-swipe-cell": "@vant/weapp/swipe-cell/index"
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
   }
 }
