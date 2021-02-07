@@ -7,11 +7,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    value: '1'
+    value: ''
   },
 
   onChange(e){
-    console.log(123);
     this.setData({
       value: e.detail.value
     })
@@ -19,20 +18,43 @@ Page({
 
   addsay() {
     Dialog.confirm({
-      title: '操作',
-      message: '确认退出吗',
+      title: '发表',
+      message: '确认发表吗',
     })
       .then(async () => {
         // on confirm
         try {
-          console.log(456);
+          if(!this.data.value){
+            Toast.fail({message:'请输入非空字符',forbidClick: true,})
+          }
+          let year = new Date().getFullYear();
+          let mouth = new Date().getMonth() + 1;
+          let day = new Date().getDate();
+          let houre = new Date().getHours();
+          let min = new Date().getMinutes();
+          let s = new Date().getSeconds();
+          wx.cloud.callFunction({
+            name: 'addsay',
+            data: {
+              time: { year, mouth, day, houre, min, s },
+              say: this.data.value
+            }
+          }).then(res => {
+            console.log(res);
+            this.setData({
+              value: ''
+            })
+            wx.navigateBack({
+              delta: 1
+            });
+          })
         } catch(e) {
           console.log(e);
         }
       })
       .catch(() => {
         // on cancel
-        Toast.fail({message:'取消操作',forbidClick: true,})
+        Toast.fail({message:'取消发表',forbidClick: true,})
       });
   },
   /**
