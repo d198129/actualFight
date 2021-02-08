@@ -8,7 +8,8 @@
     "pages/userdetail/userdetail",
     "pages/feedback/feedback",
     "pages/day/day",
-    "pages/addday/addday"
+    "pages/addday/addday",
+    "pages/addsay/addsay"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

@@ -1,6 +1,9 @@
 {
   "usingComponents": {
     "unLogin": "../../components/login/login",
-    "nav-bar": "../../components/nav-bar/nav-bar"
+    "nav-bar": "../../components/nav-bar/nav-bar",
+    "van-index-bar": "@vant/weapp/index-bar/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-index-anchor": "@vant/weapp/index-anchor/index"
   }
 }

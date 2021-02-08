@@ -1,7 +1,8 @@
 <!--pages/find/find.wxml-->
 <nav-bar title="甜甜圈" statusBarColor="#87ceeb" navBarColor="#87ceeb" titleColor="#fff"></nav-bar>
 <view class="user_wrap" wx:if="{{userinfo.avatarUrl}}">
-  123
+  <van-uploader max-count="3" file-list="{{ fileList }}" deletable="{{true}}" bind:after-read="afterRead" />
+  <view class="sc">上传</view>
 </view>
 <block wx:else>
   <unLogin></unLogin>

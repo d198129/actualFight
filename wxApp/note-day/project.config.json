@@ -75,6 +75,24 @@
         {
           "name": "pages/index/index",
           "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addsay/addsay",
+          "pathName": "pages/addsay/addsay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/she/she",
+          "pathName": "pages/she/she",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/find/find",
+          "pathName": "pages/find/find",
           "scene": null
         }
       ]
